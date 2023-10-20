@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/design-manufacturing-oakes/static/css/main.497a3bc0.css",
-    "main.js": "/design-manufacturing-oakes/static/js/main.2d89c0f9.js",
+    "main.css": "/design-manufacturing-oakes/static/css/main.c1e345de.css",
+    "main.js": "/design-manufacturing-oakes/static/js/main.6235fea7.js",
+    "static/media/logo.jpg": "/design-manufacturing-oakes/static/media/logo.189fda9bd87c976f28d7.jpg",
+    "static/media/welder.png": "/design-manufacturing-oakes/static/media/welder.1598d636d6e33d131cda.png",
     "index.html": "/design-manufacturing-oakes/index.html",
-    "main.497a3bc0.css.map": "/design-manufacturing-oakes/static/css/main.497a3bc0.css.map",
-    "main.2d89c0f9.js.map": "/design-manufacturing-oakes/static/js/main.2d89c0f9.js.map"
+    "main.c1e345de.css.map": "/design-manufacturing-oakes/static/css/main.c1e345de.css.map",
+    "main.6235fea7.js.map": "/design-manufacturing-oakes/static/js/main.6235fea7.js.map"
   },
   "entrypoints": [
-    "static/css/main.497a3bc0.css",
-    "static/js/main.2d89c0f9.js"
+    "static/css/main.c1e345de.css",
+    "static/js/main.6235fea7.js"
   ]
 }
