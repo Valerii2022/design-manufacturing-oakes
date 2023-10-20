@@ -1,9 +1,41 @@
-.navigation {
+.header {
+  background: #222222;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+
+.wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.container {
-  padding: 15px;
+.logo {
+  height: 100px;
+}
+
+.welder {
+  height: 90px;
+}
+
+.contacts {
+  color: #fff;
+  font-size: 20px;
+}
+
+.headerPhone p:first-child {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.phoneLink {
+  color: #fff;
+  text-decoration: none;
+  transition: color 250ms linear;
+  &:hover {
+    color: #2ba6cb;
+  }
 }
