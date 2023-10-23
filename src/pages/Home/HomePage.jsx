@@ -1,5 +1,6 @@
 import css from './Home.module.css';
 import { NavLink } from 'react-router-dom';
+import { logo } from '../../image/logo';
 
 const Home = () => {
   return (
@@ -16,10 +17,7 @@ const Home = () => {
         </NavLink>
       </div>
       <div className={css.imageList}>
-        <img
-          src="http://www.designmfginc.com/images/slideshow/1.jpg"
-          alt="Slider"
-        />
+        <img src={logo.shop} alt="Slider" />
       </div>
       <h2 className={css.subtitle}>Do you have a custom job?</h2>
       <p className={css.text}>

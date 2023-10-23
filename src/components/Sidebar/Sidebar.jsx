@@ -1,19 +1,50 @@
+import { useEffect, useState } from 'react';
 import css from './Sidebar.module.css';
+import { useNavigate } from 'react-router-dom';
 
 const Sidebar = () => {
+  const [filter, setFilter] = useState('');
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    console.log(filter);
+  }, [filter]);
+
+  const handleProductsLinksClick = e => {
+    setFilter(e.target.textContent);
+    navigate('/content');
+  };
+
   return (
     <aside className={css.sidebar}>
       <div className={css.catalog}>
         <h2 className={css.title}>Product Quick Find...</h2>
-        <div className={css.linkWrapper}>
-          <button className={css.link}>View All</button>
-          <button className={css.link}>Feed Bunks & Bale Feeders</button>
-          <button className={css.link}>Feed Through Panels</button>
-          <button className={css.link}>Sucker Rod Panels & Gates</button>
-          <button className={css.link}>Freestand Panels & Windbreak</button>
-          <button className={css.link}>Pipe, Sucker Rods, & Posts</button>
-          <button className={css.link}>Calf Shelter & Hopper Cones</button>
-          <button className={css.link}>Calf Catcher</button>
+        <div className={css.linkWrapper} onClick={handleProductsLinksClick}>
+          <button type="button" className={css.link}>
+            View All
+          </button>
+          <button type="button" className={css.link}>
+            Feed Bunks & Bale Feeders
+          </button>
+          <button type="button" className={css.link}>
+            Feed Through Panels
+          </button>
+          <button type="button" className={css.link}>
+            Sucker Rod Panels & Gates
+          </button>
+          <button type="button" className={css.link}>
+            Freestand Panels & Windbreak
+          </button>
+          <button type="button" className={css.link}>
+            Pipe, Sucker Rods, & Posts
+          </button>
+          <button type="button" className={css.link}>
+            Calf Shelter & Hopper Cones
+          </button>
+          <button type="button" className={css.link}>
+            Calf Catcher
+          </button>
         </div>
       </div>
       <div className={css.formWrapper}>

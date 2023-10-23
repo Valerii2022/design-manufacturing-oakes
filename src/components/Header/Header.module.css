@@ -24,11 +24,13 @@
   }
 }
 
-.mobileMenu {
+.mobileMenuBtn {
+  margin-top: 35px;
   align-self: end;
   display: flex;
   align-items: center;
   gap: 8px;
+  background-color: transparent;
 }
 
 .mobileMenuTitle {
@@ -67,6 +69,20 @@
   }
 }
 
+.link {
+  display: block;
+  color: #fff;
+  background-color: #222222;
+  font-size: 16px;
+  padding: 7px 15px;
+  cursor: pointer;
+  text-align: left;
+  transition: color 250ms linear, background-color 250ms linear;
+  &:hover {
+    color: #2ba6cb;
+  }
+}
+
 @media screen and (max-width: 639px) {
   .welder {
     display: none;
@@ -95,7 +111,11 @@
     justify-self: end;
   }
 
-  .mobileMenu {
+  .mobileMenuBtn {
+    display: none;
+  }
+
+  .linkWrapper {
     display: none;
   }
 }

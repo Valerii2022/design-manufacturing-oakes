@@ -13,11 +13,13 @@
 
 .content {
   grid-area: 'main';
-  display: flex;
+  display: grid;
+  grid-template: 1fr / 2fr 1fr;
+  align-items: start;
   gap: 15px;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 20px 8px;
 }
 
 .footer {
