@@ -1,12 +1,8 @@
 import css from './Content.module.css';
-import data from '../../data/products.json';
+// import data from '../../data/products.json';
 
 const Content = () => {
-  return (
-    <div className={css.container}>
-      <h2 className={css.title}>{data[0].id}</h2>
-    </div>
-  );
+  return <div className={css.container}></div>;
 };
 
 export default Content;

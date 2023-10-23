@@ -18,7 +18,7 @@ const Home = () => {
       <div className={css.imageList}>
         <img
           src="http://www.designmfginc.com/images/slideshow/1.jpg"
-          alt="Main"
+          alt="Slider"
         />
       </div>
       <h2 className={css.subtitle}>Do you have a custom job?</h2>

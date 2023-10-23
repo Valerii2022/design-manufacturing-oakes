@@ -3,33 +3,17 @@ import css from './Sidebar.module.css';
 const Sidebar = () => {
   return (
     <aside className={css.sidebar}>
-      <div class="catalog">
+      <div className={css.catalog}>
         <h2 className={css.title}>Product Quick Find...</h2>
         <div className={css.linkWrapper}>
-          <a href="./catalog.html" className={css.link}>
-            View All
-          </a>
-          <a href="./bunks.html" className={css.link}>
-            Feed Bunks & Bale Feeders
-          </a>
-          <a href="./feed-through.html" className={css.link}>
-            Feed Through Panels
-          </a>
-          <a href="./gates.html" className={css.link}>
-            Sucker Rod Panels & Gates
-          </a>
-          <a href="./windbreak.html" className={css.link}>
-            Freestand Panels & Windbreak
-          </a>
-          <a href="./pipes-rods.html" className={css.link}>
-            Pipe, Sucker Rods, & Posts
-          </a>
-          <a href="./shelters.html" className={css.link}>
-            Calf Shelter & Hopper Cones
-          </a>
-          <a href="./catcher.html" className={css.link}>
-            Calf Catcher
-          </a>
+          <button className={css.link}>View All</button>
+          <button className={css.link}>Feed Bunks & Bale Feeders</button>
+          <button className={css.link}>Feed Through Panels</button>
+          <button className={css.link}>Sucker Rod Panels & Gates</button>
+          <button className={css.link}>Freestand Panels & Windbreak</button>
+          <button className={css.link}>Pipe, Sucker Rods, & Posts</button>
+          <button className={css.link}>Calf Shelter & Hopper Cones</button>
+          <button className={css.link}>Calf Catcher</button>
         </div>
       </div>
       <div className={css.formWrapper}>
@@ -40,7 +24,7 @@ const Sidebar = () => {
         </p>
         <form action="#">
           <div className={css.inputWrap}>
-            <label for="userName" className={css.label}>
+            <label htmlFor="userName" className={css.label}>
               Name:
             </label>
             <input
@@ -51,7 +35,7 @@ const Sidebar = () => {
             />
           </div>
           <div className={css.inputWrap}>
-            <label for="userEmail" className={css.label}>
+            <label htmlFor="userEmail" className={css.label}>
               Email:
             </label>
             <input
@@ -62,7 +46,7 @@ const Sidebar = () => {
             />
           </div>
           <div className={css.inputWrap}>
-            <label for="userPhone" className={css.label}>
+            <label htmlFor="userPhone" className={css.label}>
               Phone:
             </label>
             <input
@@ -73,7 +57,7 @@ const Sidebar = () => {
             />
           </div>
           <div className={css.inputWrap}>
-            <label for="comments" className={css.label}>
+            <label htmlFor="comments" className={css.label}>
               Comments:
             </label>
             <textarea
@@ -84,7 +68,7 @@ const Sidebar = () => {
             ></textarea>
           </div>
           <div className={css.inputWrap}>
-            <label for="user-type" className={css.label}>
+            <label htmlFor="user-type" className={css.label}>
               Type the words: <span className={css.typeText}>43BBWW</span>
             </label>
             <input type="text" className={css.input} id="type" name="type" />

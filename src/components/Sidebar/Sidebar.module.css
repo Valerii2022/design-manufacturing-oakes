@@ -6,22 +6,19 @@
   border: 1px solid #a6a6a6;
 }
 
-/* .title {
-  font-size: 18px;
-  background-color: #222222;
-  border-radius: 3px;
-  margin-bottom: 20px;
-  padding: 5px;
-  font-weight: bold;
-} */
-
 .link {
   color: #2ba6cb;
-  text-decoration: none;
   background: #f2f2f2;
   font-size: 16px;
   padding: 10px 5px;
   margin-bottom: 2px;
+  cursor: pointer;
+  text-align: left;
+  transition: color 250ms linear, background-color 250ms linear;
+  &:hover {
+    color: #f2f2f2;
+    background-color: #2ba6cb;
+  }
 }
 
 .title {
@@ -48,11 +45,7 @@
 .linkWrapper {
   display: flex;
   flex-direction: column;
-  margin-bottom: 16px;
-}
-
-.catalog link:last-child {
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .label {
