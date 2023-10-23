@@ -39,8 +39,8 @@ const Home = () => {
       <address>
         <p className={css.text}>11128 88th Street SE</p>
         <p className={css.text}>Oakes, ND 58474</p>
-        <p className={css.text}>Phone: 701-742-4442</p>
       </address>
+      <p className={css.text}>Phone: 701-742-4442</p>
     </div>
   );
 };

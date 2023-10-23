@@ -1,5 +1,4 @@
 .container {
-  flex: 1 1 70%;
   background: #fff;
   padding: 20px;
   border-radius: 3px;
@@ -7,5 +6,31 @@
 }
 
 .title {
-  text-align: center;
+  font-size: 18px;
+  background: #cccccc;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.text {
+  font-size: 12px;
+  padding: 20px 0;
+  border-top: 1px solid #e8e8e8;
+  line-height: 18px;
+}
+
+.warningText {
+  font-size: 18px;
+  color: #990000;
+  font-weight: 700;
+  padding: 20px 0;
+  border-top: 1px solid #e8e8e8;
+  line-height: 24px;
 }

@@ -99,6 +99,10 @@
     grid-template: 1fr / 1fr 1fr 1fr;
   }
 
+  .logo {
+    text-align: left;
+  }
+
   .welder {
     height: 90px;
     justify-self: center;
