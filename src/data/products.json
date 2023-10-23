@@ -1,0 +1,23 @@
+[
+  {
+    "id": "Feed Bunks and Bale Feeders",
+    "products": [
+      {
+        "id": 101,
+        "image": ["http://www.designmfginc.com/images/balefeeder/3.jpg"],
+        "title": "Bale Feeder",
+        "price": 1000,
+        "description": "Bale Feeder from 3/8 rods"
+      },
+      {
+        "id": 102,
+        "image": [
+          "http://www.designmfginc.com/images/bunks/guard-rail-bunk-r2.jpg"
+        ],
+        "title": "Bottomless Guardrail Bunk",
+        "price": 1200,
+        "description": "Measurements are 4´ x 27´"
+      }
+    ]
+  }
+]

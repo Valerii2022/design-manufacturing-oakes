@@ -1,0 +1,127 @@
+.sidebar {
+  flex: 1 1 30%;
+  background-color: #fff;
+  margin: 0 15px;
+  padding: 20px;
+  border-radius: 3px;
+  border: 1px solid #a6a6a6;
+}
+
+.title {
+  font-size: 18px;
+  background-color: #222222;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.link {
+  color: #2ba6cb;
+  text-decoration: none;
+  background: #f2f2f2;
+  font-size: 16px;
+  padding: 10px 5px;
+  margin-bottom: 2px;
+}
+
+.subtitle {
+  color: #fff;
+  background: #222222;
+  font-size: 16px;
+  padding: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.text {
+  font-size: 12px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.text span {
+  font-weight: 700;
+}
+
+.linkWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog link:last-child {
+  margin-bottom: 18px;
+}
+
+.label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.inputWrap {
+  margin-bottom: 20px;
+}
+
+.input {
+  display: block;
+  box-sizing: border-box;
+  width: 200px;
+  height: 40px;
+  margin: 0 0 5px;
+  padding: 5px;
+  border: 1px solid #cacaca;
+  border-radius: 3px;
+  background-color: #fefefe;
+  box-shadow: inset 0 1px 2px rgb(10 10 10 / 10%);
+  font-size: 16px;
+  color: #0a0a0a;
+}
+
+.textarea {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  height: 100px;
+  margin: 0 0 5px;
+  padding: 5px;
+  border: 1px solid #cacaca;
+  border-radius: 3px;
+  background-color: #fefefe;
+  box-shadow: inset 0 1px 2px rgb(10 10 10 / 10%);
+  font-size: 16px;
+  color: #0a0a0a;
+}
+
+.typeText {
+  display: inline-block;
+  color: #555;
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=1);
+
+  padding: 10px;
+}
+
+.button {
+  margin-bottom: 30px;
+  padding: 8px;
+  background: #2ba6cb;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 3px;
+}

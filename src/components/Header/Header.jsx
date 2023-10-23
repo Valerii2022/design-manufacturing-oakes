@@ -17,7 +17,7 @@ const Header = () => {
             <img src={logo.welder} alt="Welder" width={'125px'} />
           </div>
           <div className={css.contacts}>
-            <div class="header__tel">
+            <div className={css.headerPhone}>
               <p>Call Us Today!</p>
               <a href="tel:7017424440" className={css.phoneLink}>
                 701-742-4442
