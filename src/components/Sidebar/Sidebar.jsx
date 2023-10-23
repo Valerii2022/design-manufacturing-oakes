@@ -33,7 +33,7 @@ const Sidebar = () => {
         </div>
       </div>
       <div className={css.formWrapper}>
-        <h2 className={css.subtitle}>Contact Us</h2>
+        <h2 className={css.title}>Contact Us</h2>
         <p className={css.text}>
           Simply fill out and submit the form below to send us an email.{' '}
           <span>All fields are required.</span>

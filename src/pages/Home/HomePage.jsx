@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <div className={css.mainContent}>
+    <div className={css.container}>
       <h1 className={css.title}>A Little About Design Manufacturing...</h1>
       <p className={css.text}>
         At Design Manufacturing we offer a variety of products like panels, bale

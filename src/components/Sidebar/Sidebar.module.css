@@ -1,20 +1,19 @@
 .sidebar {
   flex: 1 1 30%;
   background-color: #fff;
-  margin: 0 15px;
   padding: 20px;
   border-radius: 3px;
   border: 1px solid #a6a6a6;
 }
 
-.title {
+/* .title {
   font-size: 18px;
   background-color: #222222;
   border-radius: 3px;
   margin-bottom: 20px;
   padding: 5px;
   font-weight: bold;
-}
+} */
 
 .link {
   color: #2ba6cb;
@@ -25,10 +24,12 @@
   margin-bottom: 2px;
 }
 
-.subtitle {
-  color: #fff;
+.title {
+  color: #f2f2f2;
   background: #222222;
   font-size: 16px;
+  line-height: 1.6;
+  font-weight: 700;
   padding: 5px;
   margin-bottom: 20px;
   cursor: pointer;
@@ -47,6 +48,7 @@
 .linkWrapper {
   display: flex;
   flex-direction: column;
+  margin-bottom: 16px;
 }
 
 .catalog link:last-child {

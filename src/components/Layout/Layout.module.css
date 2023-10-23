@@ -1,10 +1,15 @@
 .container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
+  background-color: #cccccc;
 }
 
 .content {
   flex-grow: 1;
   display: flex;
+  gap: 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 15px 0;
 }

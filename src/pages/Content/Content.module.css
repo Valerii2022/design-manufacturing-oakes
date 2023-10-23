@@ -1,3 +1,11 @@
+.container {
+  flex: 1 1 70%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 3px;
+  border: 1px solid #a6a6a6;
+}
+
 .title {
   text-align: center;
 }

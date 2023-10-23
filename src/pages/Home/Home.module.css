@@ -1,9 +1,9 @@
-.mainContent {
+.container {
   flex: 1 1 70%;
   background: #fff;
-  margin: 0 15px;
   padding: 20px;
   border-radius: 3px;
+  border: 1px solid #a6a6a6;
 }
 
 .title {
