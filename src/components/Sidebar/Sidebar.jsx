@@ -4,16 +4,54 @@ import { useNavigate } from 'react-router-dom';
 
 const Sidebar = () => {
   const [filter, setFilter] = useState('View All');
+  const [code, setCode] = useState('');
+  const [submitBtn, setSubmitBtn] = useState(true);
+  const [inputCode, setInputCode] = useState('');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [comments, setComments] = useState('');
 
   const navigate = useNavigate();
 
   useEffect(() => {
     localStorage.setItem('filter', JSON.stringify(filter));
+    randomCode();
   }, [filter]);
 
   const handleProductsLinksClick = e => {
     setFilter(e.target.textContent);
     navigate('/content');
+  };
+
+  const randomCode = () => {
+    const code = Math.random().toString(36).substring(3, 9);
+    setCode(code);
+  };
+
+  const handleSubmitForm = e => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const data = {};
+    formData.forEach((value, key) => {
+      data[key] = value;
+    });
+    console.table(data);
+    setInputCode('');
+    setSubmitBtn(true);
+    setName('');
+    setEmail('');
+    setPhone('');
+    setComments('');
+  };
+
+  const handleTypeInput = e => {
+    setInputCode(e.target.value);
+    if (code === e.target.value) {
+      setSubmitBtn(false);
+      return;
+    }
+    setSubmitBtn(true);
   };
 
   return (
@@ -53,12 +91,19 @@ const Sidebar = () => {
           Simply fill out and submit the form below to send us an email.{' '}
           <span>All fields are required.</span>
         </p>
-        <form action="#">
+        <form action="#" onSubmit={handleSubmitForm}>
           <div className={css.inputWrap}>
             <label htmlFor="userName" className={css.label}>
               Name:
             </label>
             <input
+              required
+              pattern="[a-zA-Zа-яА-Я]+ ?[a-zA-Zа-яА-Я]+"
+              title="Only letters are allowed"
+              value={name}
+              onChange={e => {
+                setName(e.target.value);
+              }}
               type="text"
               className={css.input}
               id="userName"
@@ -70,6 +115,12 @@ const Sidebar = () => {
               Email:
             </label>
             <input
+              required
+              pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+              value={email}
+              onChange={e => {
+                setEmail(e.target.value);
+              }}
               type="email"
               className={css.input}
               id="userEmail"
@@ -81,6 +132,13 @@ const Sidebar = () => {
               Phone:
             </label>
             <input
+              required
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              title="Phone need to be at format of 000-000-0000"
+              value={phone}
+              onChange={e => {
+                setPhone(e.target.value);
+              }}
               type="tel"
               className={css.input}
               id="userPhone"
@@ -92,6 +150,10 @@ const Sidebar = () => {
               Comments:
             </label>
             <textarea
+              value={comments}
+              onChange={e => {
+                setComments(e.target.value);
+              }}
               type="textarea"
               className={css.textarea}
               id="comments"
@@ -99,14 +161,32 @@ const Sidebar = () => {
             ></textarea>
           </div>
           <div className={css.inputWrap}>
-            <label htmlFor="user-type" className={css.label}>
-              Type the words: <span className={css.typeText}>43BBWW</span>
+            <label htmlFor="code" className={css.label}>
+              Type the words:
+              <span className={css.typeText}>{code}</span>
             </label>
-            <input type="text" className={css.input} id="type" name="type" />
+            <input
+              value={inputCode}
+              onChange={handleTypeInput}
+              type="text"
+              className={css.input}
+              id="type"
+              name="code"
+            />
           </div>
-          <button type="submit" className={css.button}>
-            Submit Form
-          </button>
+          {submitBtn ? (
+            <button
+              disabled={true}
+              type="submit"
+              className={`${css.button} ${css.disabled}`}
+            >
+              Submit Form
+            </button>
+          ) : (
+            <button type="submit" className={`${css.button} ${css.active}`}>
+              Submit Form
+            </button>
+          )}
         </form>
       </div>
     </aside>

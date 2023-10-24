@@ -49,36 +49,38 @@ const Header = () => {
         <p className={css.mobileMenuTitle}>menu</p>
         <span className={css.menuIcon}></span>
       </button>
-      <div
-        style={{ transform: 'translateY(0)' }}
-        className={css.linkWrapper}
-        onClick={handleProductsLinksClick}
-      >
-        <button type="button" className={css.link}>
-          View All
-        </button>
-        <button type="button" className={css.link}>
-          Feed Bunks & Bale Feeders
-        </button>
-        <button type="button" className={css.link}>
-          Feed Through Panels
-        </button>
-        <button type="button" className={css.link}>
-          Sucker Rod Panels & Gates
-        </button>
-        <button type="button" className={css.link}>
-          Freestand Panels & Windbreak
-        </button>
-        <button type="button" className={css.link}>
-          Pipe, Sucker Rods, & Posts
-        </button>
-        <button type="button" className={css.link}>
-          Calf Shelter & Hopper Cones
-        </button>
-        <button type="button" className={css.link}>
-          Calf Catcher
-        </button>
-      </div>
+      {menu && (
+        <div
+          style={{ transform: 'translateY(0)' }}
+          className={css.linkWrapper}
+          onClick={handleProductsLinksClick}
+        >
+          <button type="button" className={css.link}>
+            View All
+          </button>
+          <button type="button" className={css.link}>
+            Feed Bunks & Bale Feeders
+          </button>
+          <button type="button" className={css.link}>
+            Feed Through Panels
+          </button>
+          <button type="button" className={css.link}>
+            Sucker Rod Panels & Gates
+          </button>
+          <button type="button" className={css.link}>
+            Freestand Panels & Windbreak
+          </button>
+          <button type="button" className={css.link}>
+            Pipe, Sucker Rods, & Posts
+          </button>
+          <button type="button" className={css.link}>
+            Calf Shelter & Hopper Cones
+          </button>
+          <button type="button" className={css.link}>
+            Calf Catcher
+          </button>
+        </div>
+      )}
     </header>
   );
 };

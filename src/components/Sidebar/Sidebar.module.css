@@ -89,7 +89,13 @@
 }
 
 .typeText {
-  display: inline-block;
+  margin-left: 8px;
+  width: 116px;
+  height: 21px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
   color: #555;
   background: -moz-linear-gradient(
     -45deg,
@@ -107,16 +113,22 @@
     rgba(0, 0, 0, 0) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=1);
-
-  padding: 10px;
 }
 
 .button {
   margin-bottom: 30px;
   padding: 8px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.disabled {
+  background: #e8e8e8;
+  color: #8e8e8e;
+}
+
+.active {
   background: #2ba6cb;
   color: #fff;
-  font-size: 12px;
   cursor: pointer;
-  border-radius: 3px;
 }
