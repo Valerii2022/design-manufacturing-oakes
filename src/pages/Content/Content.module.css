@@ -5,6 +5,52 @@
   border: 1px solid #a6a6a6;
 }
 
+.breadcrumbs {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.homeLink {
+  color: #2ba6c3;
+  font-size: 12px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* .catalogList {
+}
+
+.catalogItem{}
+
+.itemList {
+} */
+
+.item {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #e8e8e8;
+}
+
+.itemInfoWrap {
+  display: flex;
+}
+
+.imageList,
+.descriptionList {
+  flex: 1 1 50%;
+  padding: 20px 0;
+}
+
+.imageList img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.imageList img:last-child {
+  margin-bottom: 0;
+}
+
 .title {
   font-size: 18px;
   background: #cccccc;
@@ -17,6 +63,26 @@
 .subtitle {
   font-weight: 700;
   margin-bottom: 5px;
+}
+
+.blockTitle {
+  font-size: 18px;
+  color: #cc0000;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.descriptionList p {
+  font-size: 16px;
+  color: #0a0a0a;
+}
+
+.descriptionList span {
+  font-weight: 700;
+}
+
+.descriptionTitleWrap {
+  margin-bottom: 30px;
 }
 
 .text {
@@ -33,4 +99,17 @@
   padding: 20px 0;
   border-top: 1px solid #e8e8e8;
   line-height: 24px;
+}
+
+/* .addressBox {
+} */
+
+.video {
+  border-top: 1px solid #e8e8e8;
+  padding: 20px 0 0 0;
+}
+
+.videoFrame {
+  width: 650px;
+  height: 400px;
 }

@@ -1,9 +1,80 @@
+import { useNavigate } from 'react-router-dom';
 import css from './Content.module.css';
-// import data from '../../data/products.json';
+import data from '../../data/products.json';
+import { nanoid } from 'nanoid';
 
 const Content = () => {
+  const navigate = useNavigate();
+  console.log(data);
+
   return (
     <div className={css.container}>
+      <div className={css.breadcrumbs}>
+        <p>
+          <button
+            onClick={() => {
+              navigate('/');
+            }}
+            className={css.homeLink}
+          >
+            Home
+          </button>
+          - All Products view
+        </p>
+      </div>
+      <ul className={css.catalogList}>
+        {data.map(({ productId, products }) => {
+          return (
+            <li className={css.catalogItem} key={productId}>
+              <h2 className={css.title}>{productId}</h2>
+              <ul className={css.itemList}>
+                {products.map(
+                  ({ id, video, image, title, price, description }) => {
+                    return (
+                      <li className={css.item} key={id}>
+                        {video && (
+                          <div className={css.video}>
+                            <iframe
+                              className={css.videoFrame}
+                              src={video}
+                              title="Calf Catcher Design Manufacturing"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                              allowFullScreen
+                            ></iframe>
+                          </div>
+                        )}
+                        <div className={css.itemInfoWrap}>
+                          <div className={css.imageList}>
+                            {image.map(element => {
+                              return (
+                                <img key={nanoid()} src={element} alt={title} />
+                              );
+                            })}
+                          </div>
+                          <div className={css.descriptionList}>
+                            <div className={css.descriptionTitleWrap}>
+                              <h4 className={css.blockTitle}>{title}</h4>
+                              <p>
+                                <span>Price:</span> {price}
+                              </p>
+                            </div>
+                            {description && (
+                              <div className={css.description}>
+                                <span>Description</span>
+                                <p>{description}</p>
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      </li>
+                    );
+                  }
+                )}
+              </ul>
+            </li>
+          );
+        })}
+      </ul>
       <div className={css.text}>
         <p>
           While we try to keep information current and accurate on this website,
@@ -17,7 +88,7 @@ const Content = () => {
           call for pricing.
         </p>
       </div>
-      <div class="main__info-bottom">
+      <div className={css.addressBox}>
         <h2 className={css.title}>Have Questions or want to place an order?</h2>
         <p>
           If you have any questions or would like to place an order, we would
