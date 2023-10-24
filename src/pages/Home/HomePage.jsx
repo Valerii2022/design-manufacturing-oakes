@@ -36,8 +36,8 @@ const Home = () => {
         information below to contact us.
       </p>
       <h3 className={css.secondSubtitle}>Design Manufacturing, Inc.</h3>
-      <address>
-        <p className={css.text}>11128 88th Street SE</p>
+      <address className={css.address}>
+        <p>11128 88th Street SE</p>
         <p className={css.text}>Oakes, ND 58474</p>
       </address>
       <p className={css.text}>Phone: 701-742-4442</p>

@@ -1,5 +1,4 @@
 .container {
-  flex: 1 1 70%;
   background: #fff;
   padding: 20px;
   border-radius: 3px;
@@ -47,9 +46,24 @@
 
 .imageList img {
   display: inline-block;
+  width: 100%;
 }
 
 .text {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.text:last-child {
+  margin-bottom: 0;
+}
+
+.address {
+  margin-bottom: 16px;
+}
+
+.address p {
   font-size: 16px;
   line-height: 24px;
 }
