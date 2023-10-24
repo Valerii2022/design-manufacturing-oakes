@@ -32,7 +32,7 @@ const Content = () => {
         <ul className={css.catalogList}>
           {filteredData.map(({ productId, products }) => {
             return (
-              <li className={css.catalogItem} key={productId}>
+              <li key={productId}>
                 <h2 className={css.title}>{productId}</h2>
                 <ul className={css.itemList}>
                   {products.map(
