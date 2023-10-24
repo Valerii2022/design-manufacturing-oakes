@@ -2,15 +2,16 @@ import { useNavigate } from 'react-router-dom';
 import css from './Content.module.css';
 import data from '../../data/products.json';
 import { nanoid } from 'nanoid';
+import { useEffect } from 'react';
 
 const Content = () => {
   const navigate = useNavigate();
   const filter = JSON.parse(localStorage.getItem('filter'));
-  console.log(filter);
 
-  const filteredData = filter
-    ? data.filter(({ productId }) => productId === filter)
-    : data;
+  useEffect(() => {}, []);
+
+  const filteredData =
+    filter === 'View All' ? data : data.filter(el => el.productId === filter);
 
   return (
     <div className={css.container}>
@@ -52,7 +53,11 @@ const Content = () => {
                           <div className={css.imageList}>
                             {image.map(element => {
                               return (
-                                <img key={nanoid()} src={element} alt={title} />
+                                <img
+                                  key={nanoid()}
+                                  src={`${element}`}
+                                  alt={title}
+                                />
                               );
                             })}
                           </div>

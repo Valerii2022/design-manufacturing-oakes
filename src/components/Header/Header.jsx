@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
-  const [filter, setFilter] = useState('');
+  const [filter, setFilter] = useState('View All');
 
   const navigate = useNavigate();
 

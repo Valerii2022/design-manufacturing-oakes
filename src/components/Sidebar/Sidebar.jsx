@@ -3,7 +3,7 @@ import css from './Sidebar.module.css';
 import { useNavigate } from 'react-router-dom';
 
 const Sidebar = () => {
-  const [filter, setFilter] = useState('');
+  const [filter, setFilter] = useState('View All');
 
   const navigate = useNavigate();
 
