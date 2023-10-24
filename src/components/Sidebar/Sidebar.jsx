@@ -8,7 +8,7 @@ const Sidebar = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    console.log(filter);
+    localStorage.setItem('filter', JSON.stringify(filter));
   }, [filter]);
 
   const handleProductsLinksClick = e => {

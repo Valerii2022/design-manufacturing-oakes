@@ -5,7 +5,12 @@ import { nanoid } from 'nanoid';
 
 const Content = () => {
   const navigate = useNavigate();
-  console.log(data);
+  const filter = JSON.parse(localStorage.getItem('filter'));
+  console.log(filter);
+
+  const filteredData = filter
+    ? data.filter(({ productId }) => productId === filter)
+    : data;
 
   return (
     <div className={css.container}>
@@ -23,7 +28,7 @@ const Content = () => {
         </p>
       </div>
       <ul className={css.catalogList}>
-        {data.map(({ productId, products }) => {
+        {filteredData.map(({ productId, products }) => {
           return (
             <li className={css.catalogItem} key={productId}>
               <h2 className={css.title}>{productId}</h2>
