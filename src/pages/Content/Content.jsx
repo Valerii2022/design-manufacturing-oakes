@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import css from './Content.module.css';
-import data from '../../data/products.json';
+import data from '../../data/products.js';
 import { nanoid } from 'nanoid';
 import { useEffect } from 'react';
 
