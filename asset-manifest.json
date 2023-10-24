@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/design-manufacturing-oakes/static/css/main.c215bc2a.css",
-    "main.js": "/design-manufacturing-oakes/static/js/main.8f54014d.js",
+    "main.js": "/design-manufacturing-oakes/static/js/main.d228fbf0.js",
     "static/media/shop.jpg": "/design-manufacturing-oakes/static/media/shop.551b7850d56b2f620369.jpg",
     "static/media/logo.jpg": "/design-manufacturing-oakes/static/media/logo.189fda9bd87c976f28d7.jpg",
     "static/media/welder.png": "/design-manufacturing-oakes/static/media/welder.1598d636d6e33d131cda.png",
     "index.html": "/design-manufacturing-oakes/index.html",
     "main.c215bc2a.css.map": "/design-manufacturing-oakes/static/css/main.c215bc2a.css.map",
-    "main.8f54014d.js.map": "/design-manufacturing-oakes/static/js/main.8f54014d.js.map"
+    "main.d228fbf0.js.map": "/design-manufacturing-oakes/static/js/main.d228fbf0.js.map"
   },
   "entrypoints": [
     "static/css/main.c215bc2a.css",
-    "static/js/main.8f54014d.js"
+    "static/js/main.d228fbf0.js"
   ]
 }
