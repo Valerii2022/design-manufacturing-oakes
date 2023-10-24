@@ -1,6 +1,6 @@
 .container {
   background: #fff;
-  padding: 20px;
+  padding: 16px;
   border-radius: 3px;
   border: 1px solid #a6a6a6;
 }
@@ -33,6 +33,7 @@
 
 .itemInfoWrap {
   display: flex;
+  gap: 16px;
 }
 
 .imageList,
@@ -42,7 +43,7 @@
 }
 
 .imageList img {
-  width: 300px;
+  width: 100%;
   height: auto;
   margin-bottom: 10px;
 }
@@ -101,8 +102,19 @@
   line-height: 24px;
 }
 
-/* .addressBox {
-} */
+.addressBox p {
+  font-style: 16px;
+  line-height: 1.6;
+}
+
+.addressBox address {
+  margin-bottom: 16px;
+}
+
+.addressBox .subtitle {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
 
 .video {
   border-top: 1px solid #e8e8e8;

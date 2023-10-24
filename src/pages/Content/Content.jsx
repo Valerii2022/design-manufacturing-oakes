@@ -53,11 +53,7 @@ const Content = () => {
                           <div className={css.imageList}>
                             {image.map(element => {
                               return (
-                                <img
-                                  key={nanoid()}
-                                  src={`${element}`}
-                                  alt={title}
-                                />
+                                <img key={nanoid()} src={element} alt={title} />
                               );
                             })}
                           </div>
