@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/design-manufacturing-oakes/static/css/main.1e304f92.css",
-    "main.js": "/design-manufacturing-oakes/static/js/main.5b365649.js",
+    "main.css": "/design-manufacturing-oakes/static/css/main.d12cc0de.css",
+    "main.js": "/design-manufacturing-oakes/static/js/main.1a0e0c55.js",
     "static/media/shelter1.jpg": "/design-manufacturing-oakes/static/media/shelter1.e79d34084a978d4a7e80.jpg",
     "static/media/feed2.jpg": "/design-manufacturing-oakes/static/media/feed2.9bd4a2426547de91c094.jpg",
     "static/media/catcher4.jpg": "/design-manufacturing-oakes/static/media/catcher4.1ddf78870963a29ce09a.jpg",
@@ -14,6 +14,8 @@
     "static/media/free1.jpg": "/design-manufacturing-oakes/static/media/free1.5f1584552085754d597e.jpg",
     "static/media/shelter4.jpg": "/design-manufacturing-oakes/static/media/shelter4.4d7cb9f606a97fbb0054.jpg",
     "static/media/bunk1.jpg": "/design-manufacturing-oakes/static/media/bunk1.0dfc6fed525433afc3d3.jpg",
+    "static/media/left.png": "/design-manufacturing-oakes/static/media/left.119f4bbeca604dd748c2.png",
+    "static/media/right.png": "/design-manufacturing-oakes/static/media/right.c111c989d2115ce9bc98.png",
     "static/media/rod2.jpg": "/design-manufacturing-oakes/static/media/rod2.6daef2e41a1f2f131280.jpg",
     "static/media/shop.jpg": "/design-manufacturing-oakes/static/media/shop.551b7850d56b2f620369.jpg",
     "static/media/bale.jpg": "/design-manufacturing-oakes/static/media/bale.6d825890a53ec70c6079.jpg",
@@ -30,11 +32,11 @@
     "static/media/bunk2.jpg": "/design-manufacturing-oakes/static/media/bunk2.960e7422277667b07b02.jpg",
     "static/media/welder.png": "/design-manufacturing-oakes/static/media/welder.1598d636d6e33d131cda.png",
     "index.html": "/design-manufacturing-oakes/index.html",
-    "main.1e304f92.css.map": "/design-manufacturing-oakes/static/css/main.1e304f92.css.map",
-    "main.5b365649.js.map": "/design-manufacturing-oakes/static/js/main.5b365649.js.map"
+    "main.d12cc0de.css.map": "/design-manufacturing-oakes/static/css/main.d12cc0de.css.map",
+    "main.1a0e0c55.js.map": "/design-manufacturing-oakes/static/js/main.1a0e0c55.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e304f92.css",
-    "static/js/main.5b365649.js"
+    "static/css/main.d12cc0de.css",
+    "static/js/main.1a0e0c55.js"
   ]
 }
