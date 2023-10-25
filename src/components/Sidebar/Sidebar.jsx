@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
 import css from './Sidebar.module.css';
 import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { setStatusFilter } from 'redux/store';
+// import { addFilter } from 'redux/filterSlice';
 
 const Sidebar = () => {
   const [filter, setFilter] = useState('View All');
@@ -12,6 +15,7 @@ const Sidebar = () => {
   const [phone, setPhone] = useState('');
   const [comments, setComments] = useState('');
 
+  const dispatch = useDispatch();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -21,6 +25,7 @@ const Sidebar = () => {
 
   const handleProductsLinksClick = e => {
     setFilter(e.target.textContent);
+    dispatch(setStatusFilter(e.target.textContent));
     navigate('/content');
   };
 
