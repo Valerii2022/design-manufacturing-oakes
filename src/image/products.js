@@ -23,6 +23,7 @@ import shelter1 from './products/shelter1.jpg';
 import shelter2 from './products/shelter2.jpg';
 import shelter3 from './products/shelter3.jpg';
 import shelter4 from './products/shelter4.jpg';
+import shop from './products/shop.jpg';
 
 export const products = {
   bale,
@@ -50,4 +51,5 @@ export const products = {
   shelter2,
   shelter3,
   shelter4,
+  shop,
 };
