@@ -153,7 +153,6 @@ const data = [
     products: [
       {
         id: 15,
-        video: 'https://www.youtube.com/embed/a8pY0aAzjt0',
         image: [
           products.catcher,
           products.catcher2,

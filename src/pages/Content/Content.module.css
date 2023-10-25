@@ -18,14 +18,6 @@
   margin-right: 4px;
 }
 
-/* .catalogList {
-}
-
-.catalogItem{}
-
-.itemList {
-} */
-
 .item {
   display: flex;
   flex-direction: column;
@@ -123,16 +115,6 @@
 .addressBox .subtitle {
   margin-top: 16px;
   margin-bottom: 16px;
-}
-
-.video {
-  border-top: 1px solid #e8e8e8;
-  padding: 20px 0 0 0;
-}
-
-.videoFrame {
-  width: 650px;
-  height: 400px;
 }
 
 @media screen and (max-width: 639px) {

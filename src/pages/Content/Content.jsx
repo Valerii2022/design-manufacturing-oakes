@@ -29,27 +29,16 @@ const Content = () => {
             - View All Products
           </p>
         </div>
-        <ul className={css.catalogList}>
+        <ul>
           {filteredData.map(({ productId, products }) => {
             return (
               <li key={productId}>
                 <h2 className={css.title}>{productId}</h2>
-                <ul className={css.itemList}>
+                <ul>
                   {products.map(
                     ({ id, video, image, title, price, description }) => {
                       return (
                         <li className={css.item} key={id}>
-                          {video && (
-                            <div className={css.video}>
-                              {/* <iframe
-                                className={css.videoFrame}
-                                src={video}
-                                title="Calf Catcher Design Manufacturing"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen
-                              ></iframe> */}
-                            </div>
-                          )}
                           <div className={css.itemInfoWrap}>
                             <div className={css.imageList}>
                               {image.map(element => {
