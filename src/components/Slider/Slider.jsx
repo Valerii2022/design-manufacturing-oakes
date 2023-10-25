@@ -1,66 +1,41 @@
 import { products } from '../../image/products';
-import css from './Slider.module.css';
-import React, { useState } from 'react';
+import 'react-image-gallery/styles/css/image-gallery.css';
+import ImageGallery from 'react-image-gallery';
+import 'react-image-gallery/styles/css/image-gallery.css';
 
-const SliderData = [
+const images = [
   {
-    image: products.shop,
+    original: products.shop,
   },
   {
-    image: products.bale,
+    original: products.bale,
   },
   {
-    image: products.post1,
+    original: products.post1,
   },
   {
-    image: products.cone,
+    original: products.cone,
   },
   {
-    image: products.bunk2,
+    original: products.bunk2,
   },
 
   {
-    image: products.feed,
+    original: products.feed,
   },
   {
-    image: products.free4,
+    original: products.free4,
   },
 ];
 
 const Slider = ({ slides }) => {
-  const [current, setCurrent] = useState(0);
-  const length = slides.length;
-
-  const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
-  };
-
-  const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
-  };
-
-  if (!Array.isArray(slides) || slides.length <= 0) {
-    return null;
-  }
-
   return (
-    <section className={css.slider}>
-      <button className={css.leftArrow} onClick={prevSlide}>
-        left
-      </button>
-      <button className={css.rightArrow} onClick={nextSlide}>
-        right
-      </button>
-      {SliderData.map((slide, index) => {
-        return (
-          <div className={css.active} key={index}>
-            {index === current && (
-              <img src={slide.image} alt="Slider" className={css.image} />
-            )}
-          </div>
-        );
-      })}
-    </section>
+    <ImageGallery
+      items={images}
+      showFullscreenButton={false}
+      autoPlay={true}
+      showPlayButton={false}
+    />
   );
 };
 

@@ -1,32 +1,6 @@
 import css from './Home.module.css';
 import { NavLink } from 'react-router-dom';
-import { products } from '../../image/products';
 import Slider from 'components/Slider/Slider';
-
-const SliderData = [
-  {
-    image: products.shop,
-  },
-  {
-    image: products.bale,
-  },
-  {
-    image: products.post1,
-  },
-  {
-    image: products.cone,
-  },
-  {
-    image: products.bunk2,
-  },
-
-  {
-    image: products.feed,
-  },
-  {
-    image: products.free4,
-  },
-];
 
 const Home = () => {
   return (
@@ -43,7 +17,7 @@ const Home = () => {
         </NavLink>
       </div>
       <div className={css.imageList}>
-        <Slider slides={SliderData} />
+        <Slider />
       </div>
       <h2 className={css.subtitle}>Do you have a custom job?</h2>
       <p className={css.text}>
