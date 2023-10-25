@@ -3,10 +3,8 @@ import css from './Sidebar.module.css';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { setStatusFilter } from 'redux/store';
-// import { addFilter } from 'redux/filterSlice';
 
 const Sidebar = () => {
-  const [filter, setFilter] = useState('View All');
   const [code, setCode] = useState('');
   const [submitBtn, setSubmitBtn] = useState(true);
   const [inputCode, setInputCode] = useState('');
@@ -19,12 +17,10 @@ const Sidebar = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    localStorage.setItem('filter', JSON.stringify(filter));
     randomCode();
-  }, [filter]);
+  }, []);
 
   const handleProductsLinksClick = e => {
-    setFilter(e.target.textContent);
     dispatch(setStatusFilter(e.target.textContent));
     navigate('/content');
   };

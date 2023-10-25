@@ -1,24 +1,22 @@
 import { NavLink, useNavigate } from 'react-router-dom';
 import css from './Header.module.css';
 import { logo } from 'image/logo';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { setStatusFilter } from 'redux/store';
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
-  const [filter, setFilter] = useState('View All');
 
+  const dispatch = useDispatch();
   const navigate = useNavigate();
-
-  useEffect(() => {
-    localStorage.setItem('filter', JSON.stringify(filter));
-  }, [filter]);
 
   const handleMenuBtnClick = () => {
     setMenu(!menu);
   };
 
   const handleProductsLinksClick = e => {
-    setFilter(e.target.textContent);
+    dispatch(setStatusFilter(e.target.textContent));
     navigate('/content');
     setMenu(!menu);
   };

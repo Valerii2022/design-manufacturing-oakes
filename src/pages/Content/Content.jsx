@@ -2,7 +2,6 @@ import { useNavigate } from 'react-router-dom';
 import css from './Content.module.css';
 import data from '../../data/products.js';
 import { nanoid } from 'nanoid';
-import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { getFilter } from 'redux/store';
 
@@ -10,13 +9,10 @@ const Content = () => {
   const navigate = useNavigate();
   const filter = useSelector(getFilter);
 
-  useEffect(() => {
-    console.log(filter);
-  }, [filter]);
-
   const filteredData =
-    filter === 'View All' ? data : data.filter(el => el.productId === filter);
-  console.log(filteredData);
+    filter.filter === 'View All'
+      ? data
+      : data.filter(el => el.productId === filter.filter);
 
   return (
     <>
