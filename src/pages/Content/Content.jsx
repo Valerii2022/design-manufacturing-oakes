@@ -4,7 +4,6 @@ import data from '../../data/products.js';
 import { nanoid } from 'nanoid';
 import { useSelector } from 'react-redux';
 import { getFilter } from 'redux/store';
-// import data from '../../data/products.json';
 
 const Content = () => {
   const navigate = useNavigate();
