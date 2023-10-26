@@ -1,5 +1,4 @@
 import { configureStore } from '@reduxjs/toolkit';
-// import { filterReducer } from './filterSlice';
 
 export const setStatusFilter = value => {
   return {
@@ -12,7 +11,7 @@ const initialState = {
   filter: 'View All',
 };
 
-const rootReducer = (state = initialState, action) => {
+const filterReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'filters/setStatusFilter':
       return {
@@ -25,7 +24,7 @@ const rootReducer = (state = initialState, action) => {
 
 export const store = configureStore({
   reducer: {
-    filter: rootReducer,
+    filter: filterReducer,
   },
 });
 

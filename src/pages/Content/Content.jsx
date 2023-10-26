@@ -1,9 +1,10 @@
 import { useNavigate } from 'react-router-dom';
 import css from './Content.module.css';
-import data from '../../data/products.js';
+// import data from '../../data/products.js';
 import { nanoid } from 'nanoid';
 import { useSelector } from 'react-redux';
 import { getFilter } from 'redux/store';
+import data from '../../data/products.json';
 
 const Content = () => {
   const navigate = useNavigate();
@@ -12,7 +13,7 @@ const Content = () => {
   const filteredData =
     filter.filter === 'View All'
       ? data
-      : data.filter(el => el.productId === filter.filter);
+      : data.filter(el => el.title === filter.filter);
 
   return (
     <>
@@ -31,10 +32,10 @@ const Content = () => {
           </p>
         </div>
         <ul>
-          {filteredData.map(({ productId, products }) => {
+          {filteredData.map(({ productId, title, products }) => {
             return (
               <li key={productId}>
-                <h2 className={css.title}>{productId}</h2>
+                <h2 className={css.title}>{title}</h2>
                 <ul>
                   {products.map(
                     ({ id, video, image, title, price, description }) => {
